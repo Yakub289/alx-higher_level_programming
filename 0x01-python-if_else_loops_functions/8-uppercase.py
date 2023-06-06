@@ -4,9 +4,10 @@
 # Using a function that checks for uppercase character.
 
 def uppercase(str):
-    for uppercase in str(97, 122):
+    for uppercase in str():
 
         if ord(uppercase) >= 97 and ord(uppercase) <= 122:
             uppercase = chr(ord(uppercase) - 32)
-            print("{}".format(uppercase), end="")
-            print()
+            print("{:c}".format(uppercase), end="")
+        else:
+            print("{}".format(uppercase))
