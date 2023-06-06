@@ -2,9 +2,11 @@
 
 # Displaying alphabet in uppercase character.
 # Using a function that checks for uppercase character.
+
 def uppercase(str):
-    for uppercase in range (65, 90):
-        if uppercase <= 65 and uppercase >=90:
-            print("{:c}".format(uppercase), end=" ")
-        else:
-            print("{}".format(uppercase))
+    for uppercase in str:
+
+        if ord(uppercase) >= 97 and ord(uppercase) <= 122:
+            uppercase = chr(ord(uppercase) - 32)
+            print("{:c}".format(uppercase), end="")
+            print("")
