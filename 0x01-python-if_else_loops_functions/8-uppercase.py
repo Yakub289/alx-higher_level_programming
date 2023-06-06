@@ -10,4 +10,4 @@ def uppercase(str):
             uppercase = chr(ord(uppercase) - 32)
             print("{}".format(uppercase), end="")
         else:
-            print("{}".format(uppercase))
+            print("{}")
