@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-#!/usr/bin/env python3
 
-# Displaying alphabet in change case.
+# Displaying alphabet in change case.                                                             
 # Using a function that checks for character case.
 
-uppercase = __import__('8-uppercase').uppercase
+def uppercase(str):
 
-uppercase("best")
-uppercase("Best School 98 Battery Street")
+    for uppercase in str:
+        if ord(uppercase) <= 97 and ord(uppercase) >= 122:
+            uppercase = chr(ord(uppercase) - 32)
+        print("{}".format(uppercase), end="")
+    print()
