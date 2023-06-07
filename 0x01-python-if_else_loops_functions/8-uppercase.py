@@ -4,9 +4,8 @@
 # Using a function that checks for character case.
 
 def uppercase(string):
-
-    for uppercase in string:
-        if ord(uppercase) <= 65 and ord(uppercase) >= 90:
-            uppercase = chr(ord(uppercase) - 32)
-        print("{}".format(uppercase), end="")
+    for char in string:
+        if ord(char) >= 97 and ord(char) <= 122:
+            char = chr(ord(char) - 32)
+        print("{}".format(char), end="")
     print()
