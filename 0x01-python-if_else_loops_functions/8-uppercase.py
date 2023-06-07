@@ -7,6 +7,6 @@ def uppercase(str):
 
     for uppercase in str:
         if ord(uppercase) <= 65 and ord(uppercase) >= 90:
-            uppercase = chr(ord(uppercase) - 32)
+            uppercase = chr(str.(ord(uppercase)) - 32)
         print("{}".format(uppercase), end="")
     print()
