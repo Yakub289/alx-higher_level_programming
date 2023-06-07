@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Displaying alphabet in change case.                                                             
+# Displaying alphabet in change case.
 # Using a function that checks for character case.
 
 def uppercase(str):
