@@ -6,15 +6,15 @@
 # For numbers which are multiples of both three and five print FizzBuzz.
 # Prototype: def fizzbuzz():
 # Each element should be followed by a space
-#You are not allowed to import any module
+# You are not allowed to import any module
 
 def fizzbuzz():
     for number in range(1, 101):
-        if number % 3:
-            print("Fizz", end=" ")
+        if number % 3 == 0 and number % 5 == 0:
+            print("FizzBuzz ", end="")
+        elif number % 3 == 0:
+            print("Fizz ", end="")
         elif number % 5 == 0:
-            print("Buzz", end=" ")
-        elif number % 3 == 0 and number % 5 == 0:
-            print("FizzBuzz", end=" ")
+            print("Buzz ", end="")
         else:
-            print("{}".format(number), end=" ")
+            print("{} ".format(number), end="")
