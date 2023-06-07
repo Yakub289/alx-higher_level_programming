@@ -1,6 +1,12 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stdio.h>
+#include <unistd.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <strings.h>
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
