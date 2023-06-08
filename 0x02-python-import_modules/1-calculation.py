@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Write a program that imports functions from the file calculator_1.py
+# Program that imports functions from the file calculator_1.py
 
 if __name__ == "__main__":
 
@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     a = 10
     b = 5
-
+    
     print("{} + {} = {}".format(a, b, add(a, b)))
     print("{} - {} = {}".format(a, b, sub(a, b)))
     print("{} * {} = {}".format(a, b, mul(a, b)))
