@@ -12,8 +12,8 @@ def length():
         print(':')
     else:
         print('s:')
-    for i in range(1, len(argv)):
-        print('{}: {}'.format(i, argv[i]))
+    for axe in range(1, len(argv)):
+        print('{}: {}'.format(axe, argv[axe]))
 
-        if __name__ == "__main__":
-            length()
+if __name__ == "__main__":
+    length()
