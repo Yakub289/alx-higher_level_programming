@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Program that imports functions from the file calculator_1.py
+# Imports functions from the file calculator_1.py
 
 if __name__ == "__main__":
 
