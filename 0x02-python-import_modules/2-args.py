@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-# Number and the list of its arguments.
-
 from sys import argv
 
 def length():
