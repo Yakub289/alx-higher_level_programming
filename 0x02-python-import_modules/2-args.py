@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Prints the number of and the list of its arguments.
+# Number and the list of its arguments.
 
 from sys import argv
 
