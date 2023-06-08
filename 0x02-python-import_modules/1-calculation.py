@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
+# The value 10 to a variable a
+# The value 5 to a variable b
+
 if __name__ == "__main__":
-    
+
     from calculator_1 import add, div, mul, sub
 
     a = 10
