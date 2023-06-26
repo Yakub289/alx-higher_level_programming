@@ -12,9 +12,9 @@ def safe_print_list(my_list=[], x=0):
     number = 0
     for digits in range(x):
         try:
-            print(f"{my_list[digits]}\n", end="")
+            print(f"{my_list[digits]}", end="\n")
             number += 1
         except IndexError:
             break
-    print()
+    print("")
     return(number)
