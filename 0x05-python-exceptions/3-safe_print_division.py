@@ -8,5 +8,5 @@ def safe_print_division(a, b):
     except (ZeroDivisionError):
         divide_numbers = None
     finally:
-        print("Inside result: {:d}".format(divide_numbers))
+        print("Inside result: {}".format(divide_numbers))
     return divide_numbers
