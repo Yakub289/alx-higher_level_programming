@@ -7,7 +7,7 @@ class Square:
     """define and initilized square"""
     def __init__(self, size):
         """Assign key"""
-        self.__size = size
+        self.size = size
 
     @property
     def size(self):
