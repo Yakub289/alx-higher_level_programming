@@ -63,13 +63,13 @@ class Square:
         ret = ""
         if self.__size == 0:
             return (ret)
-        for e in range(self.__position[1]):
+        for a in range(self.__position[1]):
             print("")
-        for f in range(self.__size):
-            for g in range(self.__position[0]):
+        for b in range(self.__size):
+            for c in range(self.__position[0]):
                 print(" ", end="")
-            for h in range(self.__size):
+            for d in range(self.__size):
                 print("#", end="")
-            if i < (self.__size - 1):
+            if b < (self.__size - 1):
                 print("")
         return (ret)
