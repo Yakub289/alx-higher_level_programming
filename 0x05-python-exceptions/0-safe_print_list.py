@@ -4,12 +4,12 @@
 
 def safe_print_list(my_list=[], x=0):
     number = 0
-    for digits in range(x):
+    for element in range(x):
         try:
-            print(f"{my_list[digits]}", end="")
-            number = number + 1
+            print(my_list[element], end="")
         except IndexError:
             break
         else:
-            print()
-            return (number)
+            number = number + 1
+    print()
+    return number
