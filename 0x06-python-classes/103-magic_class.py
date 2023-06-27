@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 import math
-"""Write the Python class MagicClass that does exactly
-the same as the following Python bytecode"""
+"""Write the Python class MagicClass"""
 
 
 class MagicClass:
