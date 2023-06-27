@@ -5,7 +5,7 @@
 
 class Square:
     """define and initilized square"""
-    def __init__(self, size):
+    def __init__(self, size=0):
         """Assign key"""
         self.__size = size
         """ileterate conditionl statement"""
