@@ -7,10 +7,10 @@ class Square:
     """define and initilized square"""
     def __init__(self, size=0):
         """Assign key"""
-        self.__size = size
         """ileterate conditionl statement"""
         if isinstance(size, int):
             if size < 0:
                 raise ValueError("size must be >= 0")
-            else:
-                raise TypeError("size must be an integer")
+            self.__size = size
+        else:
+            raise TypeError("size must be an integer")
