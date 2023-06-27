@@ -7,8 +7,8 @@ class Square:
     """define and initilized square"""
     def __init__(self, size=0, position=(0, 0)):
         """Assign key"""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -47,13 +47,13 @@ class Square:
     def my_print(self):
         """prints in stdout the square with the character #:"""
         if self.__size == 0:
-            print()
+            print("")
         else:
             for a in range(self.__position[1]):
-                print()
+                print("")
             for b in range(self.__size):
                 for c in range(self.__position[0]):
                     print(" ", end="")
                 for d in range(self.__size):
                     print("#", end="")
-                print()
+                print("")
