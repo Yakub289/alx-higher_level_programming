@@ -5,11 +5,10 @@
 
 class Rectangle:
     """initilize instance of a number"""
-    """change attribute with new representation"""
-    """define and initilizing rectangle"""
     number_of_instances = 0
+    """change attribute with new representation"""
     print_symbol = "#"
-
+    """define and initilizing rectangle"""
     def __init__(self, width=0, height=0):
         """assign keys"""
         self.width = width
@@ -61,7 +60,7 @@ class Rectangle:
             return ("")
         for column in range(self.__height):
             for row in range(self.__width):
-                print("#", end="")
+                print(self.print_symbol, end="")
             if column < (self.__height - 1):
                 print("")
         return ("")
