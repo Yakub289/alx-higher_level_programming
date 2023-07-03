@@ -5,8 +5,8 @@
 
 class Rectangle:
     """initilize instance of a number"""
-    number_of_instances = 0
     """change attribute with new representation"""
+    number_of_instances = 0
     print_symbol = "#"
 
     """define and initilizing rectangle"""
