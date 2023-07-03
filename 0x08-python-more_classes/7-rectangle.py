@@ -8,6 +8,7 @@ class Rectangle:
     number_of_instances = 0
     """change attribute with new representation"""
     print_symbol = "#"
+
     """define and initilizing rectangle"""
     def __init__(self, width=0, height=0):
         """assign keys"""
