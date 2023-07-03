@@ -8,7 +8,7 @@ class Rectangle:
     number_of_instances = 0
     """change attribute with new representation"""
     print_symbol = "#"
-    """define by a new instance and return value size"""
+    """define square by a new instance and return value size"""
     @classmethod
     def square(cls, size=0):
         return cls(size, size)
