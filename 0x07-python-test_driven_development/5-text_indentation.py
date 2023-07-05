@@ -14,9 +14,9 @@ def text_indentation(text):
     text = text.strip()
     new_text = ""
     for character in text:
-        if character == " " and character == no_space:
+        if character is " " and no_space:
             pass
-        elif character == "." or character == "?" or character == ":":
+        elif character is "." or character is "?" or character is ":":
             new_text = new_text + character + "\n\n"
             no_space = True
         else:
