@@ -8,9 +8,4 @@ from the specified class ; otherwise False."""
 
 def inherits_from(obj, a_class):
     """define inherits of obj-class and return the value of class"""
-    if isinstance(obj, a_class):
-        return (True)
-    elif type(obj) != a_class:
-        return (True)
-    else:
-        return (False)
+    return (isinstance(obj, a_class) and (type(obj) is not a_class))
