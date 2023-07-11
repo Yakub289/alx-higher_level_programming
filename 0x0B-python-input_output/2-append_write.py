@@ -8,5 +8,5 @@
 def append_write(filename="", text=""):
     """define append write function and return its value"""
     with open(filename, 'a') as file:
-        append_file = file.write(text)
-    return (append_file)
+        file_append = file.write(text)
+        return (file_append)
