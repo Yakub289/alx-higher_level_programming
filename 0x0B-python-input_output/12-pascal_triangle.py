@@ -17,6 +17,6 @@ def pascal_triangle(n):
         row = [1]
         if pyramid > 0:
             for prime in range(pyramid):
-                row.append(sum(list[-1][prime:prime + 2]))
+                row.append(sum(list_lists[-1][prime:prime + 2]))
         list_lists.append(row)
     return (list_lists)
