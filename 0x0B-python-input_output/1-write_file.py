@@ -5,11 +5,8 @@
 and returns the number of characters written:"""
 
 
-def number_of_lines(filename=""):
-    """Write a function that returns the number of lines of a text file"""
-    line_number = 0
-    with open(filename, 'r') as file:
-        for line in file:
-            line_number += 1
-
-    return(line_number)
+def write_file(filename="", text=""):
+    """define the write function and return it value"""
+    with open(filename, 'w') as file:
+        file_write = file.write(text)
+    return (file_write)
