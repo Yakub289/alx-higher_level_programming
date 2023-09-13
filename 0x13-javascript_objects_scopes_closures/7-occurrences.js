@@ -5,9 +5,9 @@
 // Prototype: exports.nbOccurences = function (list, searchElement).
 
 exports.nbOccurences = function (list, searchElement) {
-  let count = 0;
+  let totalIndex = 0;
   for (let i = 0; i < list.length; i++) {
-    count = (list[i] === searchElement ? count + 1 : count);
+    totalIndex = (list[i] === searchElement ? totalIndex + 1 : totalIndex);
   }
-  return (count);
+  return (totalIndex);
 };
