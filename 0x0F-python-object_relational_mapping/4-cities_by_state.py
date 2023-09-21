@@ -6,18 +6,18 @@
 import MySQLdb
 from sys import argv
 
-if __name__ == '__main__':
-
-    db_connect = MySQLdb.connect(
-            host="localhost",
+if __name__ == "__main__":
+    db = MySQLdb.connect(
+            host='localhost',
             port=3306,
             user=argv[1],
             passwd=argv[2],
-            db=argv[3])
-    db_cursor.execute("SELECT cities.id, cities.name, states.name FROM cities\
-            JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC")
-    rows_selected = db_cursor.fetchall()
-
-    if rows_selected is not None:
-        for row in rows_selected:
-            print(row)
+            db=argv[3],
+            charset='utf8')
+    cur = db.cursor()
+    cur.execute("SELECT `cur`.`id`, `cur`.`name`, `st`.`name` \
+                FROM `cities` as `cur` \
+                INNER JOIN `states` as `st` \
+                ON `cur`.`state_id` = `st`.`id` \
+                ORDER BY `cur`.`id`")
+    [print(city) for city in cur.fetchall()]
