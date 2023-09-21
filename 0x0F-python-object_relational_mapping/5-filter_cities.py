@@ -22,4 +22,4 @@ if __name__ == '__main__':
                 ON `cur`.`state_id` = `st`.`id` \
                 ORDER BY `cur`.`id`")
     print(", ".join([city[2] for city in cur.fetchall()
-        if city[4] == argv[4]]))
+          if city[4] == argv[4]]))
